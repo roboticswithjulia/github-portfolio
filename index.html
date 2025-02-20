@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Júlia MP</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header id="header" class="header">
+      <div class="container container-lg">
+        <div class="header-nav">
+          <a
+            href="#home"
+            class="logo"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            >Júlia Marsal Perendreu</a>
+          <nav id="nav" class="nav">
+            <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Works</a>
+              </li>
+              <li class="nav-item">
+                <a href="#talks" class="nav-link">Talks</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <button id="nav-btn" class="nav-btn">
+              <img
+                id="nav-btn-img"
+                src="img/icons/open.svg"
+                alt="Navigation button"
+              />
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container container-lg">
+        <div
+          class="hero-row"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
+          <div class="hero-content">
+            <span class="hero-greeting"> Hello, I am</span>
+            <h1 class="hero-heading">Júlia Marsal Perendreu</h1>
+            <span class="hero-heading-subtitle"
+              >Robotics & Industrial Engineer</span
+            >
+            <div class="about-social-list">
+              <div class="social-links-row">
+                <a href="https://github.com/roboticswithjulia" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="img/social_icons/github.svg"
+                    alt="Link to GitHub account"
+                  />
+                </a>
+
+                <a href="https://www.linkedin.com/in/juliamarsalrobotics" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="img/social_icons/linkedin.svg"
+                    alt="Link to linkedin profile"
+                  />
+                </a>
+
+                <!--a href="#!">
+                  <img
+                    src="img/social_icons/xing.svg"
+                    alt="Link to Xing profile"
+                  />
+                </a>
+
+                <a href="#!">
+                  <img
+                    src="img/social_icons/facebook.svg"
+                    alt="Link to facebook profile"
+                /></a>
+                <a href="#!">
+                  <img
+                    src="img/social_icons/instagram.svg"
+                    alt="Link to instagram profile"
+                /></a-->
+              </div>
+            </div>
+
+            <div>
+              <a href="#projects" class="btn">My Portfolio</a>
+              <a href="#contact" class="btn btn-white">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img
+              src="img/profile/pic.png"
+              alt="Picture of Júlia Marsal taken from LinkedIn</a>
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-title">
+          <h2 class="title">About Me</h2>
+        </div>
+        <div class="about-row">
+          <div
+            class="about-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <p class="about-descr">
+              I am a Robotics Software Engineer. I have been working in different areas of robotics acquiring mechanical, electronics and programming skills.
+              First, as a robotic teacher, giving classes to children and teenagers about robots and micro-controllers. 
+              Next, I started to work in the industry , developing and programming robots using modern robotics practices and technologies like ROS, computer vision AI and deep learning.
+              I am always looking for new challenges and opportunities to learn, grow and endow robots with new capabilities.<br /><br />
+              Let's collaborate and bring robots to new levels! 
+            </p>
+            <div class="about-download-btn">
+              <a href="./docs/CV_JMP.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-white">Download CV</a>
+            </div>
+          </div>
+          <div
+            class="about-skills"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+
+            <div class="skill">
+              <div class="skill-title">C | C++</div>
+              <div class="skill-percent">95%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="95"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">ROS | Gazebo | Sensors integration</div>
+              <div class="skill-percent">90%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="90"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Python</div>
+              <div class="skill-percent">80%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">I2C | UART | SPI | Ethercat </div>
+              <div class="skill-percent">80%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">OpenCV | YOLO</div>
+              <div class="skill-percent">80%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">SDK | API integration</div>
+              <div class="skill-percent">80%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Docker | Devcontainers</div>
+              <div class="skill-percent">70%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="70"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">ROS2</div>
+              <div class="skill-percent">50%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="50"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Rust</div>
+              <div class="skill-percent">25%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="25"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-row">
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+          >
+            <img class="service-card-img" src="img/services/01.svg" alt="" />
+            <h3 class="service-card-title">Hardware integration</h3>
+            <p>
+              Developing custom software for different hardware components 
+              integrating sensors, actuators and micro-controllers in custom applications. 
+            </p>
+          </div>
+
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img class="service-card-img" src="img/services/02.svg" alt="" />
+            <h3 class="service-card-title">Simulation</h3>
+            <p>
+            Prototype and validate hardware designs through simulation software to assess 
+            technical feasibility, performance metrics, and potential challenges before 
+            physical implementation.
+
+
+            </p>
+          </div>
+
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <img class="service-card-img" src="img/services/03.svg" alt="" />
+            <h3 class="service-card-title">AI | Computer Vision</h3>
+            <p>
+              Implementing AI algorithms for computer vision, object detection, 
+              and machine learning to enhance robot capabilities and improve performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container container-lg">
+        <div class="projects-title">
+          <h2 class="title">Works</h2>
+        </div>
+
+        <div class="projects-row">
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/DarwinOp.png" style="width:auto ; height: 350px" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Interaction algorithms with the DarwinOP robot</h5>
+                  <p class="white">Hardware integration, Simulation, Computer Vision</p>
+                  <a href="https://www.youtube.com/watch?v=C8sWIZbXR_0" target="_blank" rel="noopener noreferrer" class="white">
+                    <img src="img/social_icons/youtube.svg" alt="Watch on YouTube" style="width: 24px; margin-right: 10px;">
+                  </a>
+                  <a href="https://drive.google.com/file/d/1E3WOts66PdEKh5uH3abhuQDucc7soQak/view" target="_blank" rel="noopener noreferrer" class="white">
+                    <img src="img/icons/document.svg" alt="Read Thesis [Catalan]" style="width: 24px;">
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/YumIOC.JPG"  style="width:auto ; height: 350px;"/>
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">ROS setup in YUMI ABB robot</h5>
+                  <p class="white">Hardware integration, Simulation</p>
+                  <a href="https://www.youtube.com/watch?v=bcHvZ7h3cnk" target="_blank" rel="noopener noreferrer" class="white">
+                    <img src="img/social_icons/youtube.svg" alt="Watch on YouTube" style="width: 24px; margin-right: 10px;">
+                  </a>
+                  <a href="https://github.com/roboticswithjulia/yumi_motion" target="_blank" rel="noopener noreferrer" class="white">
+                    <img src="img/social_icons/github.svg" alt="Watch on GitHub" style="width: 24px; margin-right: 10px;">
+                  </a>
+                  <a href="https://github.com/roboticswithjulia/yumi_motion/blob/master/pdf/ROS_control.pdf" target="_blank" rel="noopener noreferrer" class="white">
+                    <img src="img/icons/document.svg" alt="Read Manual" style="width: 24px;">
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
+          <a href="#!">
+            <img class="project-img" src="img/works/ground_robotics.png" style="width:auto ; height: 350px" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">Ground Robots</h5>
+                <p class="white">SW development and Computer Vision</p>
+                <a href="https://drive.google.com/file/d/1aIIMws_o93cjNvrRGqalBMQcNy2JBLEZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="white">
+                  <img src="img/social_icons/video_white.svg" alt="Watch on YouTube" style="width: 24px; margin-right: 10px;">
+                </a>
+                <a href="https://docs.google.com/presentation/d/1nF-wfAYbtdhWHM8DVjxptqcVWSt4v5Hz/edit?usp=sharing&ouid=110856661025008762926&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="white">
+                  <img src="img/icons/document.svg" alt="Read Manual [Spanish]" style="width: 24px;">
+                </a>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+          >
+          <a href="#!">
+            <img class="project-img" src="img/works/Aerial_robots.png" style="width:auto ; height: 350px" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">Aerial robots</h5>
+                <p class="white">SW development, Simulation and Computer Vision</p>
+                <a href="https://drive.google.com/file/d/1syk6Km238dwAWLHCE0Qwo_I6W_N4ZYOE/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="white">
+                  <img src="img/social_icons/video.svg" alt="Video Project" style="width: 24px;">
+                </a>
+                <a href="https://gitlab.com/juliamp22/uav_project" target="_blank" rel="noopener noreferrer" class="white">
+                  <img src="img/social_icons/github_white.svg" alt="Read repository" style="width: 24px;">
+                </a>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="1200"
+            data-aos-duration="1000"
+          >
+
+          <a href="#!">
+            <img class="project-img" src="img/works/Human_handling_marro_tank.jpg" style="width:auto ; height: 350px" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">Human-aware robot behavior controller</h5>
+                <p class="white">SW development, Computer Vision and AI</p>
+                <a href="https://github.com/easyrobotic/coffee_machine" target="_blank" rel="noopener noreferrer" class="white">
+                  <img src="img/social_icons/github.svg" alt="repository" style="width: 24px;">
+                </a>
+                <a href="https://drive.google.com/file/d/1TAMZuoCp4F_7mkcO8nl7d-IhL5fJnkcb/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="white">
+                  <img src="img/social_icons/video_white.svg" alt="video" style="width: 24px;">
+                </a>
+                <a href="https://drive.google.com/file/d/1luZELTEH7mbRaTVgSdBka2Q9bYcxu0jB/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="white">
+                  <img src="img/icons/document.svg" alt="Thesis [Catalan]" style="width: 24px;">
+                </a>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="1500"
+            data-aos-duration="1000"
+          >
+          <a href="#!">
+            <img class="project-img" src="img/works/ADA.png" style="width:auto ; height: 350px" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">Autonomous Datacenter Assistant</h5>
+                <p class="white">Hardware integration, Simulation and Computer Vision   </p>
+                <a href="https://youtu.be/twihJkbUj2o?si=-0u80cKO3f85EQa0" target="_blank" rel="noopener noreferrer" class="white">
+                  <img src="img/social_icons/youtube.svg" alt="Watch on YouTube" style="width: 24px; margin-right: 10px;">
+                </a>
+                <a href="https://youtu.be/oX5ZUl7mOd0?si=fyPpo69pCzggUZ-s" target="_blank" rel="noopener noreferrer" class="white">
+                  <img src="img/social_icons/youtube.svg" alt="Watch on YouTube" style="width: 24px; margin-right: 10px;">
+                </a>
+              </div>
+            </div>
+          </a>
+        </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="1800"
+            data-aos-duration="1000"
+          >
+          <a href="#!">
+            <img class="project-img" src="img/works/Swift.jpg" style="width:auto ; height: 350px" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">High-altitude imaging platform</h5>
+                <p class="white">SW development and Hardware integration</p>
+                <a href="https://nearspacelabs.com/technology/#meet-swift" target="_blank" rel="noopener noreferrer" class="white">
+                  <img src="img/icons/document.svg" alt="Read Manual" style="width: 24px;">
+                </a>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="2100"
+            data-aos-duration="1000"
+          >
+          <a href="#!">
+            <img class="project-img" src="img/works/DTE.jpg" style="width:auto ; height: 350px" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">Aluminum elemental analyzer</h5>
+                <p class="white">SW development, Simulation and Hardware integration</p>
+                <a href="https://www.dte.ai/products" target="_blank" rel="noopener noreferrer" class="white">
+                  <img src="img/icons/document.svg" alt="Read Manual" style="width: 24px;">
+                </a>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div
+          class="project-box"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="2400"
+          data-aos-duration="1000"
+          >
+          <a href="#!">
+            <img class="project-img" src="img/works/go2.png" style="width:auto ; height: 350px" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">Programming ROS2 with Rust</h5>
+                <p class="white">SW development and Simulation</p>
+                <a href="https://github.com/roboticswithjulia/ros2_rust_workshop" target="_blank" rel="noopener noreferrer" class="white">
+                  <img src="img/social_icons/github_white.svg" alt="Read Manual" style="width: 24px;">
+                </a>
+              </div>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="talks" class="talks">
+      <div class="projects-title">
+        <h2 class="title">Talks</h2>
+      </div>
+    <div class="talks-content tab-space">
+      <div class="event-name tab-100px">
+        <h5 class="gray"><span class="bold">Rustmeet 2025</span></h5>
+        <h5 class="gray"><span class="bold">FOSDEM 2025</span></h5>
+        <h5 class="gray"><span class="bold">ROSCON ES 2024</span></h5>
+        <h5 class="gray"><span class="bold">ROS Meetup Barcelona 2024</span></h5>
+      </div>
+      <div class="event-month-year">
+        <h5 class="gray">March 2025</h5>
+        <h5 class="gray">February 2025</h5>
+        <h5 class="gray">September 2024</h5>
+        <h5 class="gray">April | July | December 2024</h5>
+      </div>
+      <div class="event-localization">
+        <h5 class="gray">Gliwice, Poland</h5>
+        <h5 class="gray">Brussels, Belgium</h5>
+        <h5 class="gray">Madrid, Spain</h5>
+        <h5 class="gray">Barcelona, Spain</h5>
+      </div>
+      <div class="event-type">
+        <h5 class="gray">Talk & Workshop</h5>
+        <h5 class="gray">Talk</h5>
+        <h5 class="gray">Workshop</h5>
+        <h5 class="gray">Co-Organizer</h5>
+      </div>
+      <div class="event-description">
+        <h5 class="gray">Programming ROS2 with Rust</h5>
+        <h5 class="gray">Programming ROS2 with Rust</h5>
+        <h5 class="gray">Desarrollo de Aplicaciones Reales en Robótica con ROS 2 y Rust</h5>
+        <h5 class="gray">Eurecat | IAAC | Robots&Beers</h5>
+      </div>
+      <div class="event-links">
+        <a href="https://rustmeet.eu/en/agenda/" target="_blank" rel="noopener noreferrer" class="white link-icon">
+          <img src="img/social_icons/website.svg" alt="Wepage" style="width: 24px;">
+        </a>
+        <a href="https://fosdem.org/2025/schedule/event/fosdem-2025-6548-programming-ros-2-with-rust" target="_blank" rel="noopener noreferrer" class="white link-icon">
+          <img src="img/social_icons/website.svg" alt="Wepage" style="width: 24px;">
+        </a>
+        <a href="https://roscon.org.es/ROSConES2024.html" target="_blank" rel="noopener noreferrer" class="white link-icon">
+          <img src="img/social_icons/website.svg" alt="Wepage" style="width: 24px;">
+        </a>
+        <a href="https://www.eventbrite.com/e/entradas-4th-ros-meetup-barcelona-end-of-year-gathering-1091616597629?aff=oddtdtcreator/" target="_blank" rel="noopener noreferrer" class="white link-icon">
+          <img src="img/social_icons/website.svg" alt="Wepage" style="width: 24px;">
+        </a>
+      </div>
+    </div>
+</section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-title">
+          <h2 class="title">Contact</h2>
+        </div>
+        <div class="contact-content">
+          <p>
+            Tell me about your project.
+            <br />
+            Let's talk and work together!
+            <br />
+          </p>
+          <h5 class="contact-content">
+            <a href="mailto:julia.marsal.robotics@gmail.com" class="contact-content">julia.marsal.robotics@gmail.com</a>
+        </h5>
+        </div>
+
+        <form class="contactForm" data-aos="zoom-in" data-aos-duration="1000">
+          <!--div class="input-box">
+            <input type="text" name="name" placeholder="Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <div
+            class="contact-button"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
+            <button href="#!" class="btn btn-red" name="submit" type="submit">
+              Send Message
+            </button>
+          </div>
+        </form>
+        <div class="response"></div>
+      </div-->
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="social-links-row footer-social">
+            <a href="https://github.com/roboticswithjulia" target="_blank" rel="noopener noreferrer">
+              <img 
+                  src="img/social_icons/github.svg"
+                  alt="Link to GitHub account"
+              />
+          </a>
+
+            <a href="https://www.linkedin.com/in/juliamarsalrobotics" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/social_icons/linkedin.svg"
+                alt="Link to linkedin profile"
+              />
+            </a>
+
+            <!--a href="#!">
+              <img src="img/social_icons/xing.svg" alt="Link to Xing profile" />
+            </a-->
+
+            <!--a href="#!">
+              <img
+                src="img/social_icons/facebook.svg"
+                alt="Link to facebook profile"
+            /></a-->
+
+            <!--a href="#!">
+              <img
+                src="img/social_icons/instagram.svg"
+                alt="Link to instagram profile"
+            /></a-->
+          </div>
+
+          <div class="footer-copyright">
+            <p>&copy; Copyright Júlia Marsal 2025</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="goToTop" class="goToTop">
+      <a href="#home">
+        <img src="img/icons/arrow_up.svg" alt="Back to top"
+      /></a>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
