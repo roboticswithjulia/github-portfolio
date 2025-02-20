@@ -468,6 +468,7 @@ h5 {
   font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
   color: var(--supportive-text-color);
   margin: 0 auto 20px;
+  margin-top: 10px;
 }
 
 .contact form {
@@ -656,6 +657,47 @@ h5 {
   animation-delay: 0s;
 }
 
+.talks {
+  padding: 5rem 0;
+  background-color: var(--primary-bg-color);
+}
+
+.talks-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.event-name, .event-month-year, .event-localization, .event-type, .event-description, .event-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+
+.event-name h5, .event-month-year h5, .event-localization h5, .event-type h5, .event-description h5 {
+  margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+.link-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+.tab-space {
+  padding-left: 40px; /* Adjust the padding value as needed */
+}
+
+.tab-100px {
+  padding-left: 100px; /* Add 100px padding to the first column */
+}
+
+.bold {
+  font-weight: bold;
+}
 @keyframes jumping-dots {
   0% {
     top: 0;
