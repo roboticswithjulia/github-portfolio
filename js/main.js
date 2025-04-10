@@ -61,12 +61,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Tab functionality for skills section
 document.addEventListener('DOMContentLoaded', function() {
+  // Get all tab buttons and content
   const tabButtons = document.querySelectorAll('.tab-button');
   const tabContents = document.querySelectorAll('.tab-content');
-
+  
+  // Add click event listener to each tab button
   tabButtons.forEach(button => {
     button.addEventListener('click', () => {
-      const target = button.getAttribute('aria-controls');
+      // Get the ID of the content to show
+      const contentId = button.getAttribute('aria-controls');
       
       // Deactivate all tabs
       tabButtons.forEach(btn => {
@@ -74,14 +77,15 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.setAttribute('aria-selected', 'false');
       });
       
+      // Hide all tab contents
       tabContents.forEach(content => {
         content.classList.remove('active');
       });
       
-      // Activate selected tab
+      // Activate selected tab and show content
       button.classList.add('active');
       button.setAttribute('aria-selected', 'true');
-      document.getElementById(target).classList.add('active');
+      document.getElementById(contentId).classList.add('active');
     });
   });
 });
