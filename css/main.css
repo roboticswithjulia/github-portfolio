@@ -4,7 +4,7 @@
 :root {
   --primary-bg-color: #f7fbfd;
   --primary-accent: #0c1618;
-  --secondary-accent: #6f1d1b;
+  --secondary-accent: #46718C;
 
   --main-text-color: #0c1618;
   --supportive-text-color: #242d2f;
@@ -334,6 +334,7 @@ h5 {
 }
 
 .services-row {
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
@@ -370,7 +371,7 @@ h5 {
 /* Works */
 .projects {
   padding: 7rem 0;
-  background-color: var(--primary-bg-color);
+  /* background-color: var(--primary-bg-color); */
 }
 
 .projects-title {
@@ -709,5 +710,124 @@ h5 {
 
   80% {
     top: 0;
+  }
+}
+
+/* Skills Section Styles */
+
+.skills {
+  position: relative;
+  padding: 7rem 0;
+  background-color: var(--primary-bg-color);
+}
+
+
+/* .skills-container {
+  max-width: 100%;
+  margin: 0 auto;
+} */
+
+.skills-subtitle {
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.skills-tabs {
+  margin-top: 2rem;
+}
+
+.tabs-nav {
+  display: flex;
+  justify-content: center;
+  background: var(--color-light-bg);
+  border-radius: 8px;
+  padding: 6px;
+  margin-bottom: 2rem;
+  gap: 8px;
+}
+
+.tab-button {
+  background:  var(--color-white);
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  min-width: 160px;
+  text-align: center;
+}
+
+.tab-button:hover:not(.active) {
+  background: rgba(255,255,255,0.2);
+}
+
+
+.tab-button.active {
+  background: var(--white-color);
+  color: var(--color-text);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.skills-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 columns of equal width */
+  gap: 20px; /* Space between cards */
+  margin: 0 auto;
+  width: 100%;
+}
+.skill-card {
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Center text content */
+}
+
+.skill-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skill-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.skill-description {
+  color: var(--main-text-color);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center; /* Ensure text is centered */
+  margin-top: 10px; /* Add some space between image and text */
+  width: 100%; /* Use full width of the card */
+}
+
+@media (max-width: 768px) {
+  .skills-cards {
+    flex-direction: column;
   }
 }

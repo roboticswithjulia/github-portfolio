@@ -164,3 +164,17 @@
     flex: 1 1 100%;
   }
 }
+
+/* For better mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .tabs-nav {
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .tab-button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
