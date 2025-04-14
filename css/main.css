@@ -118,13 +118,13 @@ body {
   background-color: #3c4446;
 }
 
-h5 {
+/* h5 {
   font-size: 15px;
   letter-spacing: 2px;
   line-height: 23px;
   font-weight: 600;
   text-transform: uppercase;
-}
+} */
 
 .white {
   color: var(--white-color);
@@ -508,14 +508,22 @@ h5 {
 }
 
 
-/* .project-mask p {
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  font-weight: 400;
-  margin-top: 0;
-  text-align: left;
-}  */
+/* Fix for text color in project captions */
+.project-caption h5.white,
+.project-caption p.white {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.project-mask:hover .project-caption h5.white,
+.project-mask:hover .project-caption p.white {
+  color: #ffffff !important;
+}
+
+.project-mask:hover {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* Contact */
 .contact {
