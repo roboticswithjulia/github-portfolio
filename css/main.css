@@ -386,13 +386,13 @@ body {
 }
 
 
-/* .project-box {
+.project-box {
   width: 100%;
   height: 0;
-  padding-bottom: 100%; 
+  padding-bottom: 100%; /* Creates a perfect square aspect ratio */
   position: relative;
   overflow: hidden;
-}  */
+}
 
 .project-box a {
   position: absolute;
@@ -407,15 +407,11 @@ body {
 .project-box:hover .project-mask {
   opacity: 1;
   visibility: visible;
-  /**bottom: 30px;**/
 }
 
-.project-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
+.project-box:hover .project-mask .project-caption {
+  bottom: 30px;
+  /* opacity: 1; */
 }
 
 .project-box:hover .project-img {
@@ -429,12 +425,6 @@ body {
   height: 100% !important;
   object-fit: cover; /* This maintains aspect ratio while filling the container */
   object-position: center;
-}
-
-.project-caption h5.white,
-.project-caption p.white {
-  color: #ffffff !important;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 /**project - mask project-caption*/
@@ -464,7 +454,7 @@ body {
 
 
 .project-caption a:hover {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.9);
   transform: translateY(-2px);
   color: var(--white-color);
 }
@@ -480,6 +470,12 @@ body {
   transition: all 0.3s ease;
 }
 
+/* Adjust hover state */
+.project-box:hover .project-mask .project-caption {
+  bottom: 0;
+  opacity: 1;
+}
+
 /* Make sure mask covers the entire box */
 .project-mask {
   position: absolute;
@@ -487,7 +483,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.5) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.) 100%);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
