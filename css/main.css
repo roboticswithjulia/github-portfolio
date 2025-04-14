@@ -465,7 +465,7 @@ h5 {
   left: 0;
   width: 100%; /* Prevent text from going too far right */
   padding: 20px;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.3s ease;
 }
 
@@ -490,6 +490,7 @@ h5 {
 
 .project-caption h5 {
   margin-left: 40px;
+  opacity: 1;
   /* margin-bottom: 150px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -498,6 +499,7 @@ h5 {
 
 .project-caption p {
   margin-left: 40px;
+  opacity: 1;
   /* margin-bottom: 150px;
   font-size: 0.9rem;
   text-shadow: 0 1px 2px rgba(0,0,0,0.8); */
