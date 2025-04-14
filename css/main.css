@@ -407,7 +407,7 @@ body {
 .project-box:hover .project-mask .project-caption {
   opacity: 1;
   visibility: visible;
-  bottom: 30px;
+  /**bottom: 30px;**/
 }
 
 .project-box:hover .project-img {
