@@ -886,3 +886,151 @@ body {
     flex-direction: column;
   }
 }
+
+
+
+/* Talks Section Styles */
+
+.talks {
+  position: relative;
+  padding: 7rem 0;
+  background-color: var(--primary-bg-color);
+}
+
+
+/* .talks-container {
+  max-width: 100%;
+  margin: 0 auto;
+} */
+
+.talks-subtitle {
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.talks-tabs {
+  margin-top: 2rem;
+}
+
+.talks-title,
+.talks-percent {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  /* text-transform: uppercase; */
+  letter-spacing: 0px;
+}
+
+.talks-percent {
+  float: right;
+}
+.talks-bar__progress {
+  background-color: var(--gray-color);
+  border-radius: 5px;
+  height: 4px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.talks-bar__fill {
+  background-color: var(--secondary-accent);
+  height: 4px;
+  width: 0; /* Initial width is 0 */
+  transition: width 1.5s ease-in-out; /* Smooth transition for the fill */
+}
+
+
+
+.talks-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 4 columns of equal width */
+  gap: 20px; /* Space between cards */
+  margin: 0 auto;
+  width: 100%;
+}
+.talk-card {
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Center text content */
+}
+
+.talk-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.talk-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.talk-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.talk-description {
+  color: var(--main-text-color);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center; /* Ensure text is centered */
+  margin-top: 20px; /* Add some space between image and text */
+  width: 100%; /* Use full width of the card */
+}
+
+@media (max-width: 1200px) {
+  .talk-cards {
+    flex-direction: column;
+  }
+}
+
+
+/* Styling for Talks tabs, similar to Skills tabs */
+.tabs-nav-2 {
+  display: flex;
+  justify-content: center;
+  background: var(--color-light-bg);
+  border-radius: 8px;
+  padding: 6px;
+  margin-bottom: 2rem;
+  gap: 8px;
+}
+
+.tabs-nav-2 .tab-button {
+  background: var(--color-white);
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  min-width: 160px;
+  text-align: center;
+}
+
+.tabs-nav-2 .tab-button.active {
+  background: var(--white-color);
+  color: var(--color-text);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  
+}
+
+
+.tabs-nav-2 .tab-button:hover:not(.active) {
+  background: rgba(255,255,255,0.2);
+}
