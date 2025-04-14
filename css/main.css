@@ -371,7 +371,7 @@ body {
 /* Works */
 .projects {
   padding: 7rem 0;
-  /* background-color: var(--primary-bg-color); */
+  background-color: var(--white-color); 
 }
 
 .projects-title {
@@ -411,7 +411,11 @@ body {
 
 .project-box:hover .project-mask .project-caption {
   bottom: 30px;
-  opacity: 1;
+  /* opacity: 1; */
+}
+
+.text-caption {
+  color: white !important;
 }
 
 .project-box:hover .project-img {
@@ -443,19 +447,38 @@ body {
 .project-caption a {
   display: inline-flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.3); */
   border-radius: 4px;
   padding: 5px 8px;
   margin-right: 8px;
   margin-bottom: 8px;
   transition: all 0.2s ease;
-  text-decoration: none;
+}
+
+.project-caption h5 {
+  margin-left: 40px;
+  opacity: 1;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+}
+
+.project-caption p {
+  margin-left: 40px;
+  opacity: 1;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
 }
 
 
 .project-caption a:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
+  color: var(white);
 }
 
 /* Fix positioning of the caption */
@@ -465,7 +488,7 @@ body {
   left: 0;
   width: 100%; /* Prevent text from going too far right */
   padding: 20px;
-  opacity: 1;
+  /* opacity: 1; */
   transition: all 0.3s ease;
 }
 
@@ -482,48 +505,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.3) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.) 100%);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.project-caption h5 {
-  margin-left: 40px;
-  opacity: 1;
-  margin-bottom: 5px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-  color: var(--white-color);
-}
-
-.project-caption p {
-  margin-left: 40px;
-  opacity: 1;
-  margin-bottom: 5px;
-  font-size: 0.9rem;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.8); 
-  color: var(--white-color);
-}
 
 
-/* Fix for text color in project captions */
-.project-caption h5.white,
-.project-caption p.white {
-  color: #ffffff !important;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
-
-.project-mask:hover .project-caption h5.white,
-.project-mask:hover .project-caption p.white {
-  color: #ffffff !important;
-}
-
-.project-mask:hover {
-  opacity: 1;
-  visibility: visible;
-}
 
 /* Contact */
 .contact {
