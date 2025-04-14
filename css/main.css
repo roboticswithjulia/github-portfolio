@@ -386,22 +386,22 @@ body {
 }
 
 
-/* .project-box {
+.project-box {
   width: 100%;
-  height: 0;
+  height: 100%;
   padding-bottom: 100%; 
-  position: relative;
-  overflow: hidden;
-} */
+  position: relative; 
+  overflow: hidden; 
+}
 
-.project-box a {
+/* .project-box a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: block;
-}
+} */
 
 
 /* .project-box:hover .project-mask {
@@ -454,7 +454,7 @@ body {
 
 
 .project-caption a:hover {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.8);
   transform: translateY(-2px);
   color: var(--white-color);
 }
