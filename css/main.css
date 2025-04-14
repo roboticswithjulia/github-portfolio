@@ -454,7 +454,7 @@ body {
 
 
 .project-caption a:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 1);
   transform: translateY(-2px);
   color: var(--white-color);
 }
