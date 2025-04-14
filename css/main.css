@@ -404,10 +404,18 @@ body {
 }
 
 
-.project-box:hover .project-mask .project-caption {
+.project-box:hover .project-mask {
   opacity: 1;
   visibility: visible;
   /**bottom: 30px;**/
+}
+
+.project-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
 }
 
 .project-box:hover .project-img {
@@ -421,6 +429,12 @@ body {
   height: 100% !important;
   object-fit: cover; /* This maintains aspect ratio while filling the container */
   object-position: center;
+}
+
+.project-caption h5.white,
+.project-caption p.white {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 /**project - mask project-caption*/
