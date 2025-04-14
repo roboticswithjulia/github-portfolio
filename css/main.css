@@ -508,6 +508,25 @@ body {
   color: var(--white-color);
 }
 
+/* Force white text color in project captions */
+.project-caption h5.white,
+.project-caption p.white {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Ensure mask is properly visible on hover */
+.project-box:hover .project-mask {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Make all text in project captions white by default */
+.project-mask .project-caption h5,
+.project-mask .project-caption p {
+  color: #ffffff;
+}
+
 /* Contact */
 .contact {
   padding: 7rem 0;
