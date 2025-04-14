@@ -411,7 +411,7 @@ body {
 
 .project-box:hover .project-mask .project-caption {
   bottom: 30px;
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .project-box:hover .project-img {
@@ -466,19 +466,18 @@ body {
   left: 0;
   width: 100%; /* Prevent text from going too far right */
   padding: 20px;
-  opacity: 1;
+  /* opacity: 1; */
   transition: all 0.3s ease;
 }
 
-/* Adjust hover state 
+/* Adjust hover state */
 .project-box:hover .project-mask .project-caption {
   bottom: 0;
   opacity: 1;
 }
-  */
 
 /* Make sure mask covers the entire box */
-/* .project-mask {
+.project-mask {
   position: absolute;
   top: 0;
   left: 0;
@@ -488,7 +487,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-} */
+}
 
 .project-caption h5 {
   margin-left: 40px;
