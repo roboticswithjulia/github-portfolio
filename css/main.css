@@ -386,13 +386,13 @@ body {
 }
 
 
-.project-box {
+/* .project-box {
   width: 100%;
   height: 0;
-  padding-bottom: 100%; /* Creates a perfect square aspect ratio */
+  padding-bottom: 100%; 
   position: relative;
   overflow: hidden;
-}
+} */
 
 .project-box a {
   position: absolute;
@@ -404,15 +404,15 @@ body {
 }
 
 
-.project-box:hover .project-mask {
+/* .project-box:hover .project-mask {
   opacity: 1;
   visibility: visible;
-}
+} */
 
-.project-box:hover .project-mask .project-caption {
+/* .project-box:hover .project-mask .project-caption {
   bottom: 30px;
-  /* opacity: 1; */
-}
+  /* opacity: 1;
+} */
 
 .project-box:hover .project-img {
   transform: scale(1.1);
@@ -468,12 +468,6 @@ body {
   padding: 20px;
   /* opacity: 1; */
   transition: all 0.3s ease;
-}
-
-/* Adjust hover state */
-.project-box:hover .project-mask .project-caption {
-  bottom: 0;
-  opacity: 1;
 }
 
 /* Make sure mask covers the entire box */
