@@ -454,8 +454,9 @@ body {
 
 
 .project-caption a:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   transform: translateY(-2px);
+  color: var(--white-color);
 }
 
 /* Fix positioning of the caption */
@@ -494,7 +495,7 @@ body {
   margin-bottom: 5px;
   font-size: 1.1rem;
   font-weight: 600;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  /* text-shadow: 0 1px 3px rgba(0,0,0,0.8); */
   color: var(--white-color);
 }
 
@@ -503,26 +504,8 @@ body {
   opacity: 1;
   margin-bottom: 5px;
   font-size: 0.9rem;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.8); 
+  /* text-shadow: 0 1px 2px rgba(0,0,0,0.8);  */
   color: var(--white-color);
-}
-
-
-/* Fix for text color in project captions */
-.project-caption h5.white,
-.project-caption p.white {
-  color: #ffffff !important;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
-
-.project-mask:hover .project-caption h5.white,
-.project-mask:hover .project-caption p.white {
-  color: #ffffff !important;
-}
-
-.project-mask:hover {
-  opacity: 1;
-  visibility: visible;
 }
 
 /* Contact */
